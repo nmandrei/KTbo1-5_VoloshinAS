@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{
+    int x, sum = 0, n, i=0;
+    scanf_s("%d", &n);
+    if (n > 0 & n < 6) {
+        while (scanf_s("%d", &x)) {
+            if (i < n) i++;
+            else break;  // вводится на одно больше но учитывается необходимое количество
+            sum = sum + x;
+        }
+    }
+    else printf("zanovo");
+    printf("%d", sum);
+    return 0;
+}
+// ввод n, проверка от 0 до 5, иначе заново, ввод чесел кол-во которых n, вывод суммы
