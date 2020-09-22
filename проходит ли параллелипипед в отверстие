@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main()
+{
+	int x, y, z, a, b ;
+	scanf_s("%d %d %d %d %d", &a, &b, &x, &y, &z);
+	if (x <= a & y|z <= b) printf("proxodit");
+	else if (y <= a & x | z <= b)printf("proxodit");
+	else if (z <= a & y | x <= b)printf("proxodit");	
+	else
+		printf("neproxodit");
+	return 0;
+}
+// проходит ли параллелипипед в отверстие
